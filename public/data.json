@@ -1,0 +1,62 @@
+[
+  {
+    "name": "CodeMaster 2023",
+    "image": "https://example.com/hackathon1.jpg",
+    "price": "$5000",
+    "short_description": "A coding marathon for tech enthusiasts. Win $5000 and showcase your skills."
+  },
+  {
+    "name": "InnovateX Hackathon",
+    "image": "https://example.com/hackathon2.jpg",
+    "price": "$3000",
+    "short_description": "Unleash creativity, win $3000, and build innovative solutions."
+  },
+  {
+    "name": "CyberSec Challenge",
+    "image": "https://example.com/hackathon3.jpg",
+    "price": "$7000",
+    "short_description": "Test cybersecurity skills in real-world scenarios, with a $7000 prize."
+  },
+  {
+    "name": "AI HackFest",
+    "image": "https://example.com/hackathon4.jpg",
+    "price": "$4000",
+    "short_description": "Explore AI possibilities, win $4000, and dive into machine learning."
+  },
+  {
+    "name": "Blockchain Builders",
+    "image": "https://example.com/hackathon5.jpg",
+    "price": "$6000",
+    "short_description": "Create decentralized apps and win $6000 in the blockchain challenge."
+  },
+  {
+    "name": "HealthTech Innovators",
+    "image": "https://example.com/hackathon6.jpg",
+    "price": "$4500",
+    "short_description": "Revolutionize healthcare with tech-driven solutions, win $4500."
+  },
+  {
+    "name": "GameDev Showcase",
+    "image": "https://example.com/hackathon7.jpg",
+    "price": "$3500",
+    "short_description": "Build and showcase games, compete for $3500 in prizes."
+  },
+  {
+    "name": "IoT Challenge",
+    "image": "https://example.com/hackathon8.jpg",
+    "price": "$5500",
+    "short_description": "Innovate IoT projects, solve problems, and win $5500."
+  },
+  {
+    "name": "Social Impact Hackathon",
+    "image": "https://example.com/hackathon9.jpg",
+    "price": "$5000",
+    "short_description": "Use tech for positive change and compete for $5000."
+  },
+  {
+    "name": "Data Science Rumble",
+    "image": "https://example.com/hackathon10.jpg",
+    "price": "$4000",
+    "short_description": "Solve complex problems with data, win $4000 in this data science showdown."
+  }
+]
