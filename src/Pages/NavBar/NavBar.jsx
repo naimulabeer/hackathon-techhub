@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import "./navbar.styles.css";
 
 function NavBar() {
   const links = (
@@ -13,7 +14,7 @@ function NavBar() {
   );
 
   return (
-    <div>
+    <div className=" md:font-bold">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -48,9 +49,9 @@ function NavBar() {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <div className=" w-1/2 flex ">
-            <Link>Log in</Link>
-            <Link>Sign up</Link>
+          <div id="sidebar" className=" md:w-1/2 flex gap-5">
+            <NavLink to="/login">Log in</NavLink>
+            <NavLink to="/signup">Sign up</NavLink>
           </div>
         </div>
       </div>
