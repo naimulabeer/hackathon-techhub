@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleSignIn } = useContext(AuthContext);
 
   const handleSignup = (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ function Signup() {
     const password = form.get("password");
 
     if (password.length < 6) {
-      return toast.error("🦄 Password should not be less than 6 character!", {
+      return toast.error("Password should not be less than 6 character!", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -48,6 +48,10 @@ function Signup() {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        toast.success("Successfully Signed Up 👌", {
+          position: "top-center",
+          autoClose: 3000,
+        });
         updateProfile(result.user, {
           displayName: name,
           photoURL: photoUrl,
@@ -57,8 +61,12 @@ function Signup() {
       })
       .catch((err) => console.error(err));
   };
+
+  const handleGoogleSignUp = () => {
+    googleSignIn();
+  };
   return (
-    <div className="flex h-screen bg-gray-200">
+    <div className="flex h-[120vh] bg-gray-200">
       <ToastContainer />
       <div className="m-auto md:w-[500px]">
         <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -128,14 +136,18 @@ function Signup() {
               <button className="bg-slate-200 hover:bg-slate-600 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Sign up
               </button>
-              {/* <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Sign up With Google
-            </button> */}
             </div>
           </form>
+          <div className="mt-6 ml-1">
+            <button
+              className="bg-blue-500 flex justify-center items-center hover:bg-slate-200 hover:text-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onClick={handleGoogleSignUp}
+            >
+              <img className="w-10" src="google.svg" alt="google" />
+              Sign up with Google
+            </button>
+          </div>
           <div className="mt-6">
             <h1>
               Already Have an Account? <Link to="/login">Login</Link>

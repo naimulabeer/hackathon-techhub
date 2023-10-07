@@ -1,17 +1,21 @@
 import { createContext, useEffect, useState } from "react";
 import {
+  GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
 } from "firebase/auth";
 import app from "../utils/firebase.config";
 import PropTypes from "prop-types";
+import { toast } from "react-toastify";
 
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -25,6 +29,19 @@ const AuthProvider = ({ children }) => {
   const signIn = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  const googleSignIn = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const loggedInUser = result.user;
+        toast.success("Successfully Signed Up With Google", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        setUser(loggedInUser);
+      })
+      .catch((err) => console.error(err));
   };
 
   const logout = () => {
@@ -47,6 +64,7 @@ const AuthProvider = ({ children }) => {
     loading,
     createUser,
     signIn,
+    googleSignIn,
     logout,
   };
 

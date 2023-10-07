@@ -4,7 +4,12 @@ import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthProvider";
 
 function NavBar() {
-  const { user } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logout();
+  };
+
   const links = (
     <nav id="sidebar" className="flex flex-col lg:flex-row lg:gap-10 gap-2">
       <NavLink to="/">Home</NavLink>
@@ -17,7 +22,7 @@ function NavBar() {
   );
 
   return (
-    <div className=" md:font-bold">
+    <div className=" md:font-bold px-2 py-2">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -56,7 +61,7 @@ function NavBar() {
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img src={user?.imageUrl} />
+                  <img src={user?.photoURL} />
                 </div>
               </label>
               <ul
@@ -68,7 +73,7 @@ function NavBar() {
                 </li>
 
                 <li>
-                  <a>Logout</a>
+                  <a onClick={handleLogout}>Logout</a>
                 </li>
               </ul>
             </div>
