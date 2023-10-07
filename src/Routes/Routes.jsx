@@ -6,11 +6,15 @@ import Signup from "../Components/Signup/Signup";
 import Hackathons from "../Pages/Hackathons/Hackathons";
 import Blogs from "../Pages/Blogs/Blogs";
 import About from "../Pages/About/About";
+import HackathonDetails from "../Pages/HackathonDetails/HackathonDetails";
+import Error from "../Pages/Error/Error";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -20,6 +24,15 @@ const router = createBrowserRouter([
       {
         path: "/hackathons",
         element: <Hackathons />,
+        loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/hackathon/:id",
+        element: (
+          <PrivateRoute>
+            <HackathonDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/data.json"),
       },
       {

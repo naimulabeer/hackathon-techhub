@@ -4,69 +4,99 @@
     "name": "CodeMaster 2023",
     "image": "https://i.ibb.co/NLrfRkq/hackathon1.jpg",
     "price": "$5000",
-    "shortDescription": "A coding marathon for tech enthusiasts. Win $5000 and showcase your skills."
+    "shortDescription": "CodeMaster 2023 is a thrilling coding marathon designed for tech enthusiasts. Join us from November 10th to 12th for an exciting online competition where you can put your coding skills to the test. Compete against talented developers from around the world for a chance to win the grand prize of $5000. It's an excellent opportunity to showcase your coding prowess, learn from others, and network with like-minded individuals. Don't miss out on this unique experience that celebrates the world of coding and innovation!",
+    "schedule": "2023-11-10 to 2023-11-12",
+    "type": "Online",
+    "participants": 250
   },
   {
     "id": 2,
     "name": "InnovateX Hackathon",
     "image": "https://i.ibb.co/gzsr5DP/hackathon2.jpg",
     "price": "$3000",
-    "shortDescription": "Unleash creativity, win $3000, and build innovative solutions."
+    "shortDescription": "InnovateX Hackathon is your chance to unleash your creativity and build innovative solutions that can change the world. From December 5th to 7th, join us in an immersive offline event where you can collaborate with brilliant minds. Win $3000 and recognition for your groundbreaking ideas. This event is all about fostering innovation, pushing boundaries, and making a lasting impact. With 150 participants, you'll have the opportunity to connect with diverse talents and mentors who can help you bring your vision to life. Be part of this transformative experience!",
+    "schedule": "2023-12-05 to 2023-12-07",
+    "type": "Offline",
+    "participants": 150
   },
   {
     "id": 3,
     "name": "CyberSec Challenge",
     "image": "https://i.ibb.co/x5bm9rk/hackathon3.jpg",
     "price": "$7000",
-    "shortDescription": "Test cybersecurity skills in real-world scenarios, with a $7000 prize."
+    "shortDescription": "The CyberSec Challenge is here to put your cybersecurity skills to the test in real-world scenarios. Join us from February 20th to 22nd in an intense online competition where you can win a grand prize of $7000. Defend against cyber threats, solve complex challenges, and demonstrate your expertise in cybersecurity. With 300 participants from around the globe, you'll have the opportunity to learn, network, and showcase your skills. Don't miss this chance to prove yourself and compete for the top spot in the cybersecurity world!",
+    "schedule": "2024-02-20 to 2024-02-22",
+    "type": "Online",
+    "participants": 300
   },
   {
     "id": 4,
     "name": "AI HackFest",
     "image": "https://i.ibb.co/YPqmKGC/hackathon4.webp",
     "price": "$4000",
-    "shortDescription": "Explore AI possibilities, win $4000, and dive into machine learning."
+    "shortDescription": "AI HackFest invites you to explore the limitless possibilities of artificial intelligence and machine learning. Join us from March 15th to 17th for an immersive offline event where you can dive deep into AI technology. Win $4000 and gain invaluable experience in this rapidly evolving field. Collaborate with experts, learn from mentors, and work on cutting-edge AI projects. With 200 participants, you'll be part of a dynamic community of AI enthusiasts. Embrace the future of technology and be a pioneer in AI innovation!",
+    "schedule": "2024-03-15 to 2024-03-17",
+    "type": "Offline",
+    "participants": 200
   },
   {
     "id": 5,
     "name": "Blockchain Builders",
     "image": "https://i.ibb.co/1KFLYvD/hackathon5.jpg",
     "price": "$6000",
-    "shortDescription": "Create decentralized apps and win $6000 in the blockchain challenge."
+    "shortDescription": "Join the Blockchain Builders and embark on a journey to create decentralized applications that can reshape industries. From April 10th to 12th, participate in this online challenge to win a grand prize of $6000. Dive deep into blockchain technology, collaborate with fellow developers, and build applications that leverage the power of blockchain. With 280 participants, you'll have access to a supportive community and expert guidance. Seize this opportunity to revolutionize the world of blockchain and leave your mark on the industry!",
+    "schedule": "2024-04-10 to 2024-04-12",
+    "type": "Online",
+    "participants": 280
   },
   {
     "id": 6,
     "name": "HealthTech Innovators",
     "image": "https://i.ibb.co/6ZdkRrL/hackathon6.jpg",
     "price": "$4500",
-    "shortDescription": "Revolutionize healthcare with tech-driven solutions, win $4500."
+    "shortDescription": "HealthTech Innovators is your platform to revolutionize healthcare with tech-driven solutions. Join us from May 5th to 7th for an offline event that offers a chance to win $4500 and make a real impact on healthcare. Collaborate with healthcare professionals and tech enthusiasts to develop innovative solutions that address critical healthcare challenges. With 180 participants, you'll have the opportunity to network, learn, and create lasting change. Don't miss this chance to be part of the future of healthcare technology!",
+    "schedule": "2024-05-05 to 2024-05-07",
+    "type": "Offline",
+    "participants": 180
   },
   {
     "id": 7,
     "name": "GameDev Showcase",
     "image": "https://i.ibb.co/nCSMNQz/hackathon7.webp",
     "price": "$3500",
-    "shortDescription": "Build and showcase games, compete for $3500 in prizes."
+    "shortDescription": "GameDev Showcase is your opportunity to build and showcase games while competing for a $3500 prize. Join us from June 20th to 22nd in an engaging online event that celebrates game development. Collaborate with fellow game developers, create captivating games, and present your work to a global audience. With 220 participants, you'll have the chance to learn from industry experts, gain exposure, and win recognition. Don't miss this chance to be part of the exciting world of game development!",
+    "schedule": "2024-06-20 to 2024-06-22",
+    "type": "Online",
+    "participants": 220
   },
   {
     "id": 8,
     "name": "IoT Challenge",
     "image": "https://i.ibb.co/52wk9LK/hackathon8.jpg",
     "price": "$5500",
-    "shortDescription": "Innovate IoT projects, solve problems, and win $5500."
+    "shortDescription": "The IoT Challenge invites you to innovate IoT projects, solve real-world problems, and compete for a $5500 prize. Join us from July 15th to 17th for an immersive offline event that celebrates IoT technology. Collaborate with experts, experiment with cutting-edge IoT devices, and develop solutions that address pressing challenges. With 260 participants, you'll have the opportunity to network, learn, and showcase your IoT innovations. Don't miss this chance to shape the future of IoT technology!",
+    "schedule": "2024-07-15 to 2024-07-17",
+    "type": "Offline",
+    "participants": 260
   },
   {
     "id": 9,
     "name": "Social Impact Hackathon",
     "image": "https://i.ibb.co/hMNBBgj/hackathon9.jpg",
     "price": "$5000",
-    "shortDescription": "Use tech for positive change and compete for $5000."
+    "shortDescription": "Social Impact Hackathon is your chance to use tech for positive change and compete for a $5000 prize. Join us from August 10th to 12th in an inspiring online event that focuses on addressing social challenges. Collaborate with like-minded individuals, create solutions that make a real impact, and gain recognition for your efforts. With 190 participants, you'll have the opportunity to connect with organizations dedicated to social change and make a lasting difference in the world. Don't miss this chance to be a force for good through technology!",
+    "schedule": "2024-08-10 to 2024-08-12",
+    "type": "Online",
+    "participants": 190
   },
   {
     "id": 10,
     "name": "Data Science Rumble",
     "image": "https://i.ibb.co/d57KQPP/hackathon10.jpg",
     "price": "$4000",
-    "shortDescription": "Solve complex problems with data, win $4000 in this data science showdown."
+    "shortDescription": "Join the Data Science Rumble to solve complex problems with data and compete for a $4000 prize. Join us from September 5th to 7th for an exciting offline event that celebrates data science. Collaborate with data experts, analyze challenging datasets, and develop data-driven solutions. With 210 participants, you'll have the opportunity to learn from industry leaders, gain exposure, and showcase your data science skills. Don't miss this chance to be part of the data revolution and make a significant impact!",
+    "schedule": "2024-09-05 to 2024-09-07",
+    "type": "Offline",
+    "participants": 210
   }
 ]

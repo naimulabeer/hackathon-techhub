@@ -50,7 +50,7 @@ function NavBar() {
             </ul>
           </div>
           <Link to="/" className="w-20">
-            <img src="logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

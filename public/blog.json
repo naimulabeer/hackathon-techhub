@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "image": "https://example.com/blog1.jpg",
+    "title": "From Idea to Victory: Our Hackathon Journey",
+    "description": "Discover how our team turned a simple idea into a winning solution at the recent hackathon. Learn about our strategy, challenges, and the excitement of competing.",
+    "type": "Hackathon planning"
+  },
+  {
+    "id": 2,
+    "image": "https://example.com/blog2.jpg",
+    "title": "Unveiling the Winning Hack: Behind the Scenes",
+    "description": "Get an exclusive behind-the-scenes look at the development process of our award-winning hackathon project. Learn about the technology stack, design choices, and more.",
+    "type": "Hackathon planning"
+  },
+  {
+    "id": 3,
+    "image": "https://example.com/blog3.jpg",
+    "title": "Customer Spotlight: How Our Hackathon Solution Transformed Their Business",
+    "description": "Explore the success story of our hackathon project and how it brought significant improvements to our client's business operations. Real-world impact!",
+    "type": "Customer stories"
+  },
+  {
+    "id": 4,
+    "image": "https://example.com/blog4.jpg",
+    "title": "Hackathon Participant Resources: Tools and Tips for Success",
+    "description": "Are you planning to participate in a hackathon? Discover essential resources, tools, and tips to help you excel and stand out in the competition.",
+    "type": "Participant resources"
+  },
+  {
+    "id": 5,
+    "image": "https://example.com/blog5.jpg",
+    "title": "The Business Impact of Hackathons: A Deep Dive",
+    "description": "Explore how hackathons can drive innovation and create value for businesses. Learn about successful case studies and the long-term impact of hackathon initiatives.",
+    "type": "Business impact"
+  },
+  {
+    "id": 6,
+    "image": "https://example.com/blog6.jpg",
+    "title": "Navigating the Hackathon Ecosystem: Tips for Newcomers",
+    "description": "New to hackathons? Learn how to navigate the hackathon landscape, find the right events, build your skills, and make the most of your hackathon journey.",
+    "type": "Participant resources"
+  },
+  {
+    "id": 7,
+    "image": "https://example.com/blog7.jpg",
+    "title": "Turning Challenges into Opportunities: Our Hackathon Story",
+    "description": "Discover how we overcame unexpected challenges during a recent hackathon, and how these hurdles led to innovative solutions and personal growth.",
+    "type": "Hackathon planning"
+  },
+  {
+    "id": 8,
+    "image": "https://example.com/blog8.jpg",
+    "title": "Innovation That Matters: Hackathons and Their Impact on Tech",
+    "description": "Explore the role of hackathons in driving technological innovation. Dive into success stories that demonstrate the transformative power of these events.",
+    "type": "Business impact"
+  },
+  {
+    "id": 9,
+    "image": "https://example.com/blog9.jpg",
+    "title": "Hackathon Winners Share Their Winning Strategies",
+    "description": "Learn from the winners of recent hackathons as they reveal their strategies, teamwork dynamics, and tips that led them to victory. Get inspired for your next hackathon!",
+    "type": "Hackathon planning"
+  },
+  {
+    "id": 10,
+    "image": "https://example.com/blog10.jpg",
+    "title": "Hackathon Success Stories: Realizing Dreams Through Innovation",
+    "description": "Explore heartwarming stories of individuals and teams who turned their hackathon projects into real-world products, businesses, and dreams come true.",
+    "type": "Business impact"
+  }
+]
