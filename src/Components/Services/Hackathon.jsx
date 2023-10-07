@@ -5,7 +5,14 @@ function Hackathon() {
   const hackathons = useLoaderData();
   return (
     <>
-      <div className="bg-green-500 text-white text-2xl font-extrabold text-center py-4 mb-5">
+      <div
+        className=" text-3xl font-extrabold text-center py-4 mb-5"
+        style={{
+          backgroundImage: `url(/subtle-prism.svg)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         Hackathons for you
       </div>
 

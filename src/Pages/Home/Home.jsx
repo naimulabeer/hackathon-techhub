@@ -1,4 +1,7 @@
+import Blog from "../../Components/Blog/Blog";
 import Hackathon from "../../Components/Services/Hackathon";
+import Support from "../../Components/Support/Support";
+import Footer from "../Footer/Footer";
 
 function Home() {
   return (
@@ -10,6 +13,9 @@ function Home() {
         </button>
       </div>
       <Hackathon />
+      <Blog />
+      <Support />
+      <Footer />
     </>
   );
 }
