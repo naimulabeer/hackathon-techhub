@@ -19,7 +19,7 @@ function HackathonDetails() {
         <h1 className="md:text-xl sm:text-xs font-bold">{hackathon.name}</h1>
         <p className="text-sm">{hackathon.shortDescription}</p>
       </div>
-      <div className="md:w-1/2 font-bold flex flex-col gap-2">
+      <div className="md:w-1/2 font-bold flex flex-col gap-5">
         <h2 className="md:text-lg sm:text-sm font-semibold">Event Details</h2>
         <div>
           <span>Schedule: {hackathon.schedule}</span>
