@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.API_KEY,
-  authDomain: import.meta.env.AUTH_DOMAIN,
-  projectId: import.meta.env.PROJECT_ID,
-  storageBucket: import.meta.env.STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.MESSAGING_SENDER_ID,
-  appId: import.meta.env.APP_ID,
-  measurementId: import.meta.env.MEASUREMENT_ID,
+  apiKey: "AIzaSyAwQF5RG--YMFwO6-HVGn20jrXVw1eHAB8",
+  authDomain: "hackathon-event-d9255.firebaseapp.com",
+  projectId: "hackathon-event-d9255",
+  storageBucket: "hackathon-event-d9255.appspot.com",
+  messagingSenderId: "744325500663",
+  appId: "1:744325500663:web:f82ce05b5779f93c5b4df2",
+  measurementId: "G-BFFCHX4ZRC",
 };
 
 const app = initializeApp(firebaseConfig);

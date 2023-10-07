@@ -1,7 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.styles.css";
+import { useContext } from "react";
+import { AuthContext } from "../../Contexts/AuthProvider";
 
 function NavBar() {
+  const { user } = useContext(AuthContext);
   const links = (
     <nav id="sidebar" className="flex flex-col lg:flex-row lg:gap-10 gap-2">
       <NavLink to="/">Home</NavLink>
@@ -49,10 +52,32 @@ function NavBar() {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <div id="sidebar" className=" md:w-1/2 flex gap-5">
-            <NavLink to="/login">Log in</NavLink>
-            <NavLink to="/signup">Sign up</NavLink>
-          </div>
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src={user?.imageUrl} />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a className="justify-between">{user?.displayName}</a>
+                </li>
+
+                <li>
+                  <a>Logout</a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <div id="sidebar" className=" md:w-1/2 flex gap-5">
+              <NavLink to="/login">Log in</NavLink>
+              <NavLink to="/signup">Sign up</NavLink>
+            </div>
+          )}
         </div>
       </div>
     </div>
