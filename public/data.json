@@ -1,62 +1,72 @@
 [
   {
+    "id": 1,
     "name": "CodeMaster 2023",
-    "image": "https://example.com/hackathon1.jpg",
+    "image": "https://i.ibb.co/NLrfRkq/hackathon1.jpg",
     "price": "$5000",
-    "short_description": "A coding marathon for tech enthusiasts. Win $5000 and showcase your skills."
+    "shortDescription": "A coding marathon for tech enthusiasts. Win $5000 and showcase your skills."
   },
   {
+    "id": 2,
     "name": "InnovateX Hackathon",
-    "image": "https://example.com/hackathon2.jpg",
+    "image": "https://i.ibb.co/gzsr5DP/hackathon2.jpg",
     "price": "$3000",
-    "short_description": "Unleash creativity, win $3000, and build innovative solutions."
+    "shortDescription": "Unleash creativity, win $3000, and build innovative solutions."
   },
   {
+    "id": 3,
     "name": "CyberSec Challenge",
-    "image": "https://example.com/hackathon3.jpg",
+    "image": "https://i.ibb.co/x5bm9rk/hackathon3.jpg",
     "price": "$7000",
-    "short_description": "Test cybersecurity skills in real-world scenarios, with a $7000 prize."
+    "shortDescription": "Test cybersecurity skills in real-world scenarios, with a $7000 prize."
   },
   {
+    "id": 4,
     "name": "AI HackFest",
-    "image": "https://example.com/hackathon4.jpg",
+    "image": "https://i.ibb.co/YPqmKGC/hackathon4.webp",
     "price": "$4000",
-    "short_description": "Explore AI possibilities, win $4000, and dive into machine learning."
+    "shortDescription": "Explore AI possibilities, win $4000, and dive into machine learning."
   },
   {
+    "id": 5,
     "name": "Blockchain Builders",
-    "image": "https://example.com/hackathon5.jpg",
+    "image": "https://i.ibb.co/1KFLYvD/hackathon5.jpg",
     "price": "$6000",
-    "short_description": "Create decentralized apps and win $6000 in the blockchain challenge."
+    "shortDescription": "Create decentralized apps and win $6000 in the blockchain challenge."
   },
   {
+    "id": 6,
     "name": "HealthTech Innovators",
-    "image": "https://example.com/hackathon6.jpg",
+    "image": "https://i.ibb.co/6ZdkRrL/hackathon6.jpg",
     "price": "$4500",
-    "short_description": "Revolutionize healthcare with tech-driven solutions, win $4500."
+    "shortDescription": "Revolutionize healthcare with tech-driven solutions, win $4500."
   },
   {
+    "id": 7,
     "name": "GameDev Showcase",
-    "image": "https://example.com/hackathon7.jpg",
+    "image": "https://i.ibb.co/nCSMNQz/hackathon7.webp",
     "price": "$3500",
-    "short_description": "Build and showcase games, compete for $3500 in prizes."
+    "shortDescription": "Build and showcase games, compete for $3500 in prizes."
   },
   {
+    "id": 8,
     "name": "IoT Challenge",
-    "image": "https://example.com/hackathon8.jpg",
+    "image": "https://i.ibb.co/52wk9LK/hackathon8.jpg",
     "price": "$5500",
-    "short_description": "Innovate IoT projects, solve problems, and win $5500."
+    "shortDescription": "Innovate IoT projects, solve problems, and win $5500."
   },
   {
+    "id": 9,
     "name": "Social Impact Hackathon",
-    "image": "https://example.com/hackathon9.jpg",
+    "image": "https://i.ibb.co/hMNBBgj/hackathon9.jpg",
     "price": "$5000",
-    "short_description": "Use tech for positive change and compete for $5000."
+    "shortDescription": "Use tech for positive change and compete for $5000."
   },
   {
+    "id": 10,
     "name": "Data Science Rumble",
-    "image": "https://example.com/hackathon10.jpg",
+    "image": "https://i.ibb.co/d57KQPP/hackathon10.jpg",
     "price": "$4000",
-    "short_description": "Solve complex problems with data, win $4000 in this data science showdown."
+    "shortDescription": "Solve complex problems with data, win $4000 in this data science showdown."
   }
 ]

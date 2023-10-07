@@ -48,6 +48,7 @@ function Signup() {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+
         toast.success("Successfully Signed Up 👌", {
           position: "top-center",
           autoClose: 3000,

@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const { signIn, googleSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -16,10 +18,14 @@ function Login() {
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
+
         toast.success("Successfully Logged In!", {
           position: "top-center",
           autoClose: 5000,
         });
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 3000);
       })
       .catch((err) =>
         toast.error(err.message, {
