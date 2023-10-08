@@ -1,18 +1,19 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
-  const { createUser, googleSignIn } = useContext(AuthContext);
+  const { setUser, createUser, googleSignIn } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSignup = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
-    const photoUrl = form.get("photoUrl");
+    //const photoUrl = form.get("photoUrl");
     const email = form.get("email");
     const password = form.get("password");
 
@@ -51,19 +52,47 @@ function Signup() {
           position: "top-center",
           autoClose: 3000,
         });
+
         updateProfile(result.user, {
           displayName: name,
           photoURL: "https://i.ibb.co/XLXXTYK/passport.jpg",
         })
-          .then()
-          .catch();
+          .then(() => {
+            const updatedUser = {
+              ...result.user,
+              displayName: name,
+              photoURL: "https://i.ibb.co/XLXXTYK/passport.jpg",
+            };
+            setUser(updatedUser);
+            setTimeout(() => {
+              navigate(location?.state ? location.state : "/");
+            }, 2000);
+          })
+          .catch((err) =>
+            toast.error(err.message, {
+              position: "top-center",
+            })
+          );
       })
       .catch();
   };
 
   const handleGoogleSignUp = () => {
-    googleSignIn();
+    googleSignIn()
+      .then((result) => {
+        const loggedInUser = result.user;
+        toast.success("Successfully Signed Up With Google", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        setUser(loggedInUser);
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 2000);
+      })
+      .catch((err) => toast.error(err.message, { position: "top-center" }));
   };
+
   return (
     <div className="flex h-[120vh] bg-gray-200">
       <ToastContainer />

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
-  const { signIn, googleSignIn } = useContext(AuthContext);
+  const { setUser, signIn, googleSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -36,7 +36,19 @@ function Login() {
   };
 
   const handleGoogleSignIn = () => {
-    googleSignIn();
+    googleSignIn()
+      .then((result) => {
+        const loggedInUser = result.user;
+        toast.success("Successfully Signed Up With Google", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        setUser(loggedInUser);
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 2000);
+      })
+      .catch((err) => toast.error(err.message, { position: "top-center" }));
   };
 
   return (

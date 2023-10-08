@@ -10,7 +10,6 @@ import {
 } from "firebase/auth";
 import app from "../utils/firebase.config";
 import PropTypes from "prop-types";
-import { toast } from "react-toastify";
 
 export const AuthContext = createContext(null);
 
@@ -32,16 +31,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const googleSignIn = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        const loggedInUser = result.user;
-        toast.success("Successfully Signed Up With Google", {
-          position: "top-center",
-          autoClose: 3000,
-        });
-        setUser(loggedInUser);
-      })
-      .catch((err) => toast.error(err.message, { position: "top-center" }));
+    return signInWithPopup(auth, googleProvider);
   };
 
   const logout = () => {
@@ -61,6 +51,7 @@ const AuthProvider = ({ children }) => {
 
   const value = {
     user,
+    setUser,
     loading,
     createUser,
     signIn,
