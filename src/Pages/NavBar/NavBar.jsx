@@ -22,8 +22,8 @@ function NavBar() {
   );
 
   return (
-    <div className=" md:font-bold px-2 py-2">
-      <div className="navbar bg-base-100">
+    <div className=" md:font-bold">
+      <div className="navbar bg-base-100 px-4 py-2">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -81,9 +81,16 @@ function NavBar() {
               </ul>
             </div>
           ) : (
-            <div id="sidebar" className=" md:w-1/2 flex gap-5">
-              <NavLink to="/login">Log in</NavLink>
-              <NavLink to="/signup">Sign up</NavLink>
+            <div className=" md:w-1/2 flex gap-5 items-center">
+              <NavLink className="hover:text-blue-600" to="/login">
+                Log in
+              </NavLink>
+              <NavLink
+                className="bg-teal-500 px-4 py-2 text-white hover:bg-teal-700 hover:text-slate-200"
+                to="/signup"
+              >
+                Sign up
+              </NavLink>
             </div>
           )}
         </div>

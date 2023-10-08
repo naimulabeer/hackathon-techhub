@@ -27,7 +27,7 @@ function HackathonsProject() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-4 border rounded-lg shadow-lg bg-white">
+    <div className="max-w-md mx-auto mt-8 mb-10 p-4 border rounded-lg shadow-lg bg-white">
       <ToastContainer />
       <h2 className="text-2xl font-semibold mb-4">
         Submit Your Hackathon Project

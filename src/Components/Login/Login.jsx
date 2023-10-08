@@ -16,9 +16,7 @@ function Login() {
     const password = form.get("password");
 
     signIn(email, password)
-      .then((result) => {
-        console.log(result.user);
-
+      .then(() => {
         toast.success("Successfully Logged In!", {
           position: "top-center",
           autoClose: 5000,
