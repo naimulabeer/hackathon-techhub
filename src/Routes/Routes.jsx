@@ -29,9 +29,9 @@ const router = createBrowserRouter([
       {
         path: "/hackathon/:id",
         element: (
-          <PrivateRoute>
-            <HackathonDetails />
-          </PrivateRoute>
+          // <PrivateRoute>
+          <HackathonDetails />
+          // {/* </PrivateRoute> */}
         ),
         loader: () => fetch("/data.json"),
       },

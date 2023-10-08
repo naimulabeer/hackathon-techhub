@@ -1,9 +1,13 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { GoGlobe, GoHome } from "react-icons/go";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function HackathonDetails() {
   const hackathons = useLoaderData();
   const { id } = useParams();
+  const [joined, setJoined] = useState(false);
   const idInt = parseInt(id);
 
   const hackathon = hackathons.find((hackathon) => hackathon.id === idInt);
@@ -12,8 +16,17 @@ function HackathonDetails() {
     return <div>Loading...</div>;
   }
 
+  const handleJoinClick = () => {
+    toast.success("Successfully joined the hackathon!", {
+      position: "top-center",
+      autoClose: 5000,
+    });
+    setJoined(true);
+  };
+
   return (
     <div className="flex flex-col md:flex-row mt-10 md:px-20 px-5 gap-10">
+      <ToastContainer />
       <div className="w-1/2 pr-8">
         <img src={hackathon.image} alt="hackathon" className="mb-4" />
         <h1 className="md:text-xl sm:text-xs font-bold">{hackathon.name}</h1>
@@ -40,9 +53,16 @@ function HackathonDetails() {
         </div>
 
         <p className="mt-4">Managed by Hackathon TechHub</p>
-        <button className="mt-4 w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Join Hackathon
-        </button>
+        {!joined ? (
+          <button
+            className="mt-4 w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={handleJoinClick}
+          >
+            Join Hackathon
+          </button>
+        ) : (
+          <p className="mt-4 text-green-500 font-bold">Joined</p>
+        )}
       </div>
     </div>
   );
