@@ -60,7 +60,7 @@ Our Hackathon TechHub Website is your gateway to the world of hackathons. Whethe
 
 ## Usage
 
-1. Visit our website at []().
+1. Visit our website at [https://hackathon-event-d9255.web.app].
 2. Browse upcoming hackathons and register for your favorites.
 3. Participate in hackathons and submit your projects.
 4. Explore and contribute to our blog section.
