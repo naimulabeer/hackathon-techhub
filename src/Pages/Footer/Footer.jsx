@@ -1,12 +1,20 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div>
       <footer className="footer p-10 bg-base-200 flex justify-evenly gap-5">
         <nav>
           <header className="footer-title">Services</header>
-          <a className="link link-hover">Hackathons</a>
-          <a className="link link-hover">Blogs</a>
-          <a className="link link-hover">About</a>
+          <Link to="/hackathons" className="link link-hover">
+            Hackathons
+          </Link>
+          <Link to="/blogs" className="link link-hover">
+            Blogs
+          </Link>
+          <Link to="/about" className="link link-hover">
+            About
+          </Link>
         </nav>
         <aside className="items-center">
           <header className="footer-title">Hackathon TechHub</header>

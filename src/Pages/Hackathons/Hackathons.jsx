@@ -29,6 +29,8 @@ function Hackathons() {
       <div
         className="bg-cover bg-center relative h-64"
         style={{ backgroundImage: 'url("/coolbackground.png")' }}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col lg:flex-row gap-10 items-center justify-around text-white">
@@ -56,6 +58,9 @@ function Hackathons() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-40 object-cover mb-2 rounded"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
               />
               <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
               <p className="text-sm italic">{project.description}</p>

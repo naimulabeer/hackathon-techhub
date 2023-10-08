@@ -7,7 +7,12 @@ function HackathonList({ hackathon }) {
   return (
     <div className="flex bg-white border border-l-4 border-r-1 border-green-200 border-l-green-600 border-r-green-600 w-451 h-270">
       <div className="lg:w-64 lg:h-44 p-4">
-        <img className="lg:w-full lg:h-full" src={image} alt="hackathons" />
+        <img
+          className="lg:w-full lg:h-full"
+          src={image}
+          alt="hackathons"
+          data-aos="zoom-in"
+        />
       </div>
       <div className="flex flex-col justify-center p-4">
         <h1 className="lg:text-2xl font-semibold">{name}</h1>

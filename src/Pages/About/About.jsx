@@ -48,28 +48,36 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5 h-52 uppercase">
+      <div className="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5 h-52 uppercase px-2 md:px-0">
         <div className="bg-blue-500 p-4 text-white ">
           <div className="flex items-center justify-center h-full">
-            <h2 className="text-3xl font-semibold">50k+ followers</h2>
+            <h2 className="text-3xl font-semibold" data-aos="zoom-out-up">
+              50k+ followers
+            </h2>
           </div>
         </div>
 
         <div className="bg-green-500 p-4 text-white">
           <div className="flex items-center justify-center h-full">
-            <h2 className="text-3xl font-semibold">100+ events</h2>
+            <h2 className="text-3xl font-semibold" data-aos="zoom-out-down">
+              100+ events
+            </h2>
           </div>
         </div>
 
         <div className="bg-yellow-500 p-4 text-white">
           <div className="flex items-center justify-center h-full">
-            <h2 className="text-3xl font-semibold">50+ countries</h2>
+            <h2 className="text-3xl font-semibold" data-aos="zoom-out-up">
+              50+ countries
+            </h2>
           </div>
         </div>
 
         <div className="bg-red-500 p-4 text-white">
           <div className="flex items-center justify-center h-full">
-            <h2 className="text-3xl font-semibold">1 community</h2>
+            <h2 className="text-3xl font-semibold" data-aos="zoom-out-down">
+              1 community
+            </h2>
           </div>
         </div>
       </div>

@@ -12,16 +12,19 @@ function Blog() {
             src="/background1.jpg"
             alt="Image 1"
             className="w-1/4 max-h-64 rounded-md"
+            data-aos="zoom-in-right"
           />
           <img
             src="/background2.jpg"
             alt="Image 2"
             className="w-1/4 max-h-64 rounded-md"
+            data-aos="zoom-in-down"
           />
           <img
             src="/background3.jpg"
             alt="Image 3"
             className="w-1/4 max-h-64 rounded-md"
+            data-aos="zoom-in-left"
           />
         </div>
         <Link
