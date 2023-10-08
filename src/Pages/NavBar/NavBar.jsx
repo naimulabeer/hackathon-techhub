@@ -49,8 +49,11 @@ function NavBar() {
               {links}
             </ul>
           </div>
-          <Link to="/" className="w-20">
-            <img src="/logo.png" alt="logo" />
+          <Link to="/" className=" items-center flex">
+            <img className="w-12 md:w-20" src="/logo.png" alt="logo" />
+            <h1 className="text-xs md:text-base lg:text-lg font-bold">
+              Hackathon TechHub
+            </h1>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -61,7 +64,7 @@ function NavBar() {
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  <img src={user?.photoURL} />
+                  <img src={user?.photoURL} alt="userphoto" />
                 </div>
               </label>
               <ul

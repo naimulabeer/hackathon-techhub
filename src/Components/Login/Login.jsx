@@ -25,7 +25,7 @@ function Login() {
         });
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 3000);
+        }, 2000);
       })
       .catch((err) =>
         toast.error(err.message, {

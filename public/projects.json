@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Home Automation",
+    "image": "https://i.ibb.co/8rKdNCh/project1.jpg",
+    "description": "Create a smart home with IoT devices to control lights, temperature, and appliances remotely."
+  },
+  {
+    "id": 2,
+    "title": "E-commerce Platform Redesign",
+    "image": "https://i.ibb.co/7bx97Bp/project2.jpg",
+    "description": "Revamp an existing e-commerce website with a modern and user-friendly design."
+  },
+  {
+    "id": 3,
+    "title": "AI-Powered Health App",
+    "image": "https://i.ibb.co/pXh8C7x/project3.jpg",
+    "description": "Develop a mobile app that uses AI to analyze health data and provide personalized fitness recommendations."
+  },
+  {
+    "id": 4,
+    "title": "Environmental Conservation Portal",
+    "image": "https://i.ibb.co/gtKX181/project4.jpg",
+    "description": "Build a web platform to connect environmental activists and volunteers for conservation projects worldwide."
+  }
+]

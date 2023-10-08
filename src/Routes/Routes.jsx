@@ -9,6 +9,7 @@ import About from "../Pages/About/About";
 import HackathonDetails from "../Pages/HackathonDetails/HackathonDetails";
 import Error from "../Pages/Error/Error";
 import PrivateRoute from "./PrivateRoute";
+import HackathonsProject from "../Pages/Hackathons/HackathonsProject";
 
 const router = createBrowserRouter([
   {
@@ -24,20 +25,33 @@ const router = createBrowserRouter([
       {
         path: "/hackathons",
         element: <Hackathons />,
-        loader: () => fetch("/data.json"),
+        loader: () => fetch("/projects.json"),
       },
+      {
+        path: "/hackathons/project",
+        element: (
+          <PrivateRoute>
+            <HackathonsProject />
+          </PrivateRoute>
+        ),
+      },
+
       {
         path: "/hackathon/:id",
         element: (
-          // <PrivateRoute>
-          <HackathonDetails />
-          // {/* </PrivateRoute> */}
+          <PrivateRoute>
+            <HackathonDetails />
+          </PrivateRoute>
         ),
         loader: () => fetch("/data.json"),
       },
       {
         path: "/blogs",
-        element: <Blogs />,
+        element: (
+          <PrivateRoute>
+            <Blogs />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/blog.json"),
       },
       {

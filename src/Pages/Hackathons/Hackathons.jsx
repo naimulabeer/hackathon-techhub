@@ -1,84 +1,79 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Link, useLoaderData } from "react-router-dom";
+import {
+  SiPython,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiGithub,
+} from "react-icons/si";
+
+const trendingTags = [
+  { name: "Python", icon: <SiPython /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "HTML", icon: <SiHtml5 /> },
+  { name: "CSS", icon: <SiCss3 /> },
+  { name: "React", icon: <SiReact /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "GitHub", icon: <SiGithub /> },
+];
 
 function Hackathons() {
-  const [projectName, setProjectName] = useState("");
-  const [projectDescription, setProjectDescription] = useState("");
-  const [repositoryLink, setRepositoryLink] = useState("");
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    toast.success("Submitted to Hackathon TechHub", {
-      position: "top-center",
-      autoClose: 5000,
-    });
-
-    setTimeout(() => {
-      navigate("/");
-    }, 3000);
-
-    // Reset the form fields
-    setProjectName("");
-    setProjectDescription("");
-    setRepositoryLink("");
-  };
+  const projects = useLoaderData();
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-4 border rounded-lg shadow-lg bg-white">
-      <ToastContainer />
-      <h2 className="text-2xl font-semibold mb-4">
-        Submit Your Hackathon Project
-      </h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="projectName" className="block font-medium">
-            Project Name:
-          </label>
-          <input
-            type="text"
-            id="projectName"
-            className="w-full p-2 border rounded-md"
-            value={projectName}
-            onChange={(e) => setProjectName(e.target.value)}
-            required
-          />
+    <div>
+      <div
+        className="bg-cover bg-center relative h-64"
+        style={{ backgroundImage: 'url("/coolbackground.png")' }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 flex flex-col lg:flex-row gap-10 items-center justify-around text-white">
+          <h1 className="text-4xl font-semibold mb-4 text-center">
+            Explore Projects from Hackathons TechHub
+          </h1>
+          <Link
+            to="/hackathons/project"
+            className="bg-teal-500 w-1/8 h-fit hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-sm transition duration-300"
+          >
+            Add Your Project
+          </Link>
         </div>
-        <div className="mb-4">
-          <label htmlFor="projectDescription" className="block font-medium">
-            Project Description:
-          </label>
-          <textarea
-            id="projectDescription"
-            className="w-full p-2 border rounded-md"
-            value={projectDescription}
-            onChange={(e) => setProjectDescription(e.target.value)}
-            required
-          />
+      </div>
+
+      <div className="container mx-auto mt-8 p-4">
+        <h2 className="text-2xl font-semibold mb-4">Staff Picks</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white shadow-md rounded-lg border-2 border-solid border-slate-200 p-4"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-40 object-cover mb-2 rounded"
+              />
+              <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+              <p className="text-sm italic">{project.description}</p>
+            </div>
+          ))}
         </div>
-        <div className="mb-4">
-          <label htmlFor="repositoryLink" className="block font-medium">
-            Repository Link:
-          </label>
-          <input
-            type="text"
-            id="repositoryLink"
-            className="w-full p-2 border rounded-md"
-            value={repositoryLink}
-            onChange={(e) => setRepositoryLink(e.target.value)}
-            required
-          />
+      </div>
+      <div className="container mx-auto mt-8 mb-10 p-4">
+        <h2 className="text-2xl font-medium mb-6">Trending Tags</h2>
+        <div className="flex gap-10">
+          {trendingTags.map((tag, index) => (
+            <div key={index} className="flex items-center gap-1">
+              <span className="mr-1">{tag.icon}</span>
+              <span>{tag.name}</span>
+            </div>
+          ))}
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600"
-        >
-          Submit Project
-        </button>
-      </form>
+      </div>
     </div>
   );
 }

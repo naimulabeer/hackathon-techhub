@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
         });
         setUser(loggedInUser);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => toast.error(err.message, { position: "top-center" }));
   };
 
   const logout = () => {

@@ -47,20 +47,18 @@ function Signup() {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-
         toast.success("Successfully Signed Up 👌", {
           position: "top-center",
           autoClose: 3000,
         });
         updateProfile(result.user, {
           displayName: name,
-          photoURL: photoUrl,
+          photoURL: "https://i.ibb.co/XLXXTYK/passport.jpg",
         })
           .then()
           .catch();
       })
-      .catch((err) => console.error(err));
+      .catch();
   };
 
   const handleGoogleSignUp = () => {
